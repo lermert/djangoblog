@@ -9,9 +9,10 @@
 
   {% for post in posts %}
       <div>
-        <p>published: {{ post.published_date }}</p>
+        <p> author: {{ post.author }} </p>
         <h1><a href="">{{ post.title }}</a></h1>
         <p>{{ post.text|linebreaksbr }}</p>
+        <p><em>published: {{ post.published_date }}</em></p>
         <br/>
         <br/>
         <br/>
